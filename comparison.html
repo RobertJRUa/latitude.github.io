@@ -1,0 +1,113 @@
+<!-- Comparisons page (#comparisons-page)-->
+<!-- Index page -->
+<!doctype html>
+<html lang="en">
+
+  <head>
+		<!-- Specify the character encoding for this HTML document -->
+		<meta charset="utf-8"/>
+
+		<!-- Specify browser compatibility for this HTML document -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1"/>
+		
+		<!-- Give the page a title -->
+    <title>Latitude Analysis</title>
+
+		<!-- Bootstrap css component -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			
+		<!-- Bootstrap JQuery, popper and Javascript minified-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+	<!-- ############################################################################ -->
+
+  <body>
+
+    <!-- Navigation menu must have name of site on the left of the nav that allows users to return to the index from any page -->
+		<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">LATITUDE ANALYSIS</a>
+					</div>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS <span class="caret"></span></a>
+								<!-- Must contain dropdown on the right of the navbar named "Plots" which provides links to each visualization page -->
+								<ul class="dropdown-menu">
+									<li><a href="maxtemp.html">Max Temperature</a></li>
+									<li><a href="humidity.html">Humidity</a></li>
+									<li><a href="cloudiness.html">Cloudiness</a></li>
+									<li><a href="windspeed.html">Wind Speed</a></li>
+								</ul>
+							</li>
+							<!-- Must have 2 or more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page -->
+							<li><a href="comparison.html">COMPARISON</a></li>
+							<li><a href="data.html">DATA</a></li>
+						</ul>
+					</div>
+				</div>
+		</nav>
+			<br>
+			<br>
+
+		<!-- Container 1 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-md-8 col-sm-10">
+					<h1>COMPARISON: LATITUDE VS. X</h1>
+					<hr>
+                    <br>
+		</div>
+        <!-- Create Bootstrap grid for comparison visualizations -->
+        <!-- Grid must be two visualizations across on screens medium and larger, and 1 across on SM and XS screens -->
+        <div class="container">
+            <h2>CLICK CHART FOR ANALYSIS</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="figure">
+                        <a href="maxtemp.html">
+                            <img id="landing-viz" src="latvtemp.png" alt="Latitude vs. Temperature" height="350" width="550"></a>
+                    </figure>
+            </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="figure">
+                        <a href="humidity.html">
+                            <img id="landing-viz" src="latvhumidity.png" alt="Latitude vs. Humidity" height="350" width="550"></a>
+                    </figure>
+            </div>
+
+            <div class="w-100"></div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="figure">
+                        <a href="cloudiness.html">
+                            <img id="landing-viz" src="latvcloud.png" alt="Latitude vs. Cloudiness" height="350" width="550"></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="figure">
+                        <a href="windspeed.html">
+                            <img id="landing-viz" src="latvwind.png" alt="Latitude vs. Wind Speed" height="350" width="550"></a>
+                    </figure>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="sigline">
+                    <p>
+                    Robert J. Rua | Case Western Reserve University : Data Analytics Boot Camp 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>

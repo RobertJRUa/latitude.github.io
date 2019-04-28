@@ -1,0 +1,103 @@
+.body {
+    background: rgb(164,167,188);
+    font-family: Futura; 
+  }
+  
+  .box{
+    padding: 10px;
+    /*background: rgb(247, 239, 239);*/
+    background: rgb(184, 185, 189);
+    margin-top:50px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:20px;
+    align-content: center;
+  }
+  
+  .navbar {
+    background: hsl(0, 0%, 100%);
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+/* navbar brand style */
+.navbar-brand {
+    font-size: 22px;
+    padding: 15px; 
+    font-family: Futura;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgb(240, 67, 107);
+}
+
+  .navbar li {
+    display: d-block;
+    padding: 10px;
+    font-family; Futura; 
+    color: rgb(240, 67, 107);
+    margin-right: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+
+
+
+  /* Header 1 style */
+  h1 {
+    font-size: 36px;
+    font-family: Futura; 
+    color: rgb(240, 67, 107);
+  }
+  
+   /* Header 2 style */
+  h2 {
+    font-size: 22px;
+    font-family: Futura; 
+    color: rgb(240, 67, 107);
+  }
+  
+  /* Paragraph style */ 
+  p{
+      font-size: 16px;
+  }
+  
+  .c-d{color:white;
+    font-size: 30px;
+  }
+
+  @media (max-width: 500px) {
+    .navbar li {
+      padding: 10px;
+    }
+    .box {
+      margin-right: 22px;
+      margin-left: 22px;
+    }
+    .navbar ul {
+      visibility: hidden;
+    }
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
+  .col-1 {width: 8%;}
+  .col-2 {width: 17%;}
+  .col-3 {width: 24%;}
+  .col-4 {width: 32%;}
+  .col-5 {width: 40%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 60%;}
+  .col-8 {width: 65%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 82%;}
+  .col-11 {width: 91%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+
+      [class*="col-"] {
+          width: 100%;
+      }
+  }

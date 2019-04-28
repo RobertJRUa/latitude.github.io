@@ -1,0 +1,101 @@
+<!-- Max Temperature --> 
+<!doctype html>
+<html lang="en">
+
+  <head>
+		<!-- Specify the character encoding for this HTML document -->
+		<meta charset="utf-8"/>
+
+		<!-- Specify browser compatibility for this HTML document -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1"/>
+		
+		<!-- Give the page a title -->
+    <title>Latitude Analysis</title>
+
+		<!-- Bootstrap css component -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			
+		<!-- Bootstrap JQuery, popper and Javascript minified-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+	<!-- ############################################################################ -->
+
+  <body>
+
+    <!-- Navigation menu must have name of site on the left of the nav that allows users to return to the index from any page -->
+		<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">LATITUDE ANALYSIS</a>
+					</div>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS <span class="caret"></span></a>
+								<!-- Must contain dropdown on the right of the navbar named "Plots" which provides links to each visualization page -->
+								<ul class="dropdown-menu">
+									<li><a href="maxtemp.html">Max Temperature</a></li>
+									<li><a href="humidity.html">Humidity</a></li>
+									<li><a href="cloudiness.html">Cloudiness</a></li>
+									<li><a href="windspeed.html">Wind Speed</a></li>
+								</ul>
+							</li>
+							<!-- Must have 2 or more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page -->
+							<li><a href="comparison.html">COMPARISON</a></li>
+							<li><a href="data.html">DATA</a></li>
+						</ul>
+					</div>
+				</div>
+		</nav>
+			<br>
+            <br>
+            
+    <!-- Container 1 -->
+    <div class="container">
+    <!--<div class="row">-->
+    <div class="row">
+        <div class="col-lg-10 col-md-8 col-sm-10">
+          <h1>LATITUDE VS. MAX TEMPERATURE</h1>
+          <hr>
+            <img src="latvtemp.png" alt="maxtemp" height="400" width="600" align="center">
+            <p>Not suprisingly, temperatures increase as we approach the equator.
+                The tilt of the Earth's axis causes the Equator to receive direct light from the sun at all times of the year. 
+                What is interesting about this data, however, is that the southern hemisphere was significantly warmer at the time the data was collected
+                than the northern hemisphere. This seeming discrepancy is actually due to the
+                <a href="https://sciencing.com/hot-equator-but-cold-poles-6908312.html"> tilt of the earth </a>at the time the data was collected.
+            </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-2">
+            <h2>VISUALIZATIONS</h2>
+                <hr>
+					<div class= "col-md-4 col-sm-2">
+						<a href="maxtemp.html"><img id ="pic1" src="latvtemp.png" alt="maxtemp" height="150" width="150"></a>
+					</div> 
+					<div class= "col-md-6 col-sm-3">
+						<a href="humidity.html"><img id ="pic2" src="latvhumidity.png" alt="humidity" height="150" width="150"></a>
+					</div> 
+					<div class= "col-md-6 col-sm-3">
+						<a href="cloudiness.html"><img id = "pic3" src="latvcloud.png" alt="cloudiness" height="150" width="150"></a>
+					</div> 
+					<div class= "col-md-6 col-sm-3">
+						<a href="windspeed.html"><img id = "pic4" src="latvwind.png" alt="windspeed" height="150" width="150"></a>
+                    </div> 
+                </hr>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="sigline">
+                    <p>
+                    Robert J. Rua | Case Western Reserve University : Data Analytics Boot Camp 
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
